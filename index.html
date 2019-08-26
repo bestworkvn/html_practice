@@ -78,6 +78,42 @@
 		</table>
 
 		<!-- a comment html-->
-		<img src="image/image.jpg" id="id_bg" class="background">
+		<img src="image/image.jpg" id="id_bg" class="background"> </br>
+		<label>Username:</label>
+		<input type="text" name="username" size="50">
+
+		<input type="radio" name="color" id="red" value="#F00">
+		<input type="radio" name="color" id="green" value="#0F0"> 
+		<input type="radio" name="color" id="blue" value="#00F">
+
+		<fieldset>
+			<legend>Theme color:</legend>
+			<p>
+				<input type="radio" name="color" id="red" value="#F00">
+				<label for="red">Red</label>
+			</p>
+			<p>
+				<input type="radio" name="color" id="green" value="#0F0">
+				<label for="green">Green</label>
+			</p>
+			<p>
+				<input type="radio" name="color" id="blue" value="#00F">
+				<label for="blue">Blue</label>
+			</p>
+		</fieldset>
+
+		<input type="text" name="number" pattern="\d*" title="Number only, plz">
+
+		<input type="file" accept="image/*">
+		<input type="color" name="color" value="#ff0000">
+		<input type="password" name="password" placeholder="Password">
+
+		<form action="upload_file.php" method="post" enctype="multipart/form-data">
+			Select file to upload:
+			<input type="file" name="fileSubmission" id="fileSubmission">
+			<input type="submit" name="submit" value="Upload your file">
+		</form>
+
+		<button type="button" onclick="alert('hello')">Click Me</button>
 	</body>
 </html>
